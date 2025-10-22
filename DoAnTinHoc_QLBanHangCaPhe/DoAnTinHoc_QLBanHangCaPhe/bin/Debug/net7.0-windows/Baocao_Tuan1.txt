@@ -1,0 +1,2 @@
+
+ Bao cao da duoc ghi thanh cong. Du lieu doc duoc: hour_of_day,cash_type,money,coffee_name,Time_of_Day,Weekday,Month_name,Weekdaysort,Monthsort,Date,Time
