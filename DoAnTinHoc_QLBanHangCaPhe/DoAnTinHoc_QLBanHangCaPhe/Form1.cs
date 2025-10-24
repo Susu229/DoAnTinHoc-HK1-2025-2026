@@ -18,7 +18,7 @@ namespace DoAnTinHoc_QLBanHangCaPhe
                 MessageBox.Show("Lỗi không tìm thấy file Coffe_sales.csv", "Lỗi file", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            MessageBox.Show("Đã đọc tiêu đề: "+ dulieudocduoc, "Kết quả đọc");
+            MessageBox.Show("Đã đọc dữ liệu: "+ dulieudocduoc);
 
             if (XuLyCSV.GhiFile(dulieudocduoc))
             {

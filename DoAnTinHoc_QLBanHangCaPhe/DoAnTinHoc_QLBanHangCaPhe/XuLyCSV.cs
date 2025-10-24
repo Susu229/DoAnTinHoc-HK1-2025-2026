@@ -11,12 +11,12 @@ namespace DoAnTinHoc_QLBanHangCaPhe
     {
         public static string DocFile()
         {
-            string filePath = "Coffe_sales.csv";
-            if (!File.Exists(filePath))
+            string filecsv = "Coffe_sales.csv";
+            if (!File.Exists(filecsv))
             {
                 return "Lỗi đọc file";
             }
-            string[]lines = File.ReadAllLines(filePath);
+            string[]lines = File.ReadAllLines(filecsv);
             if(lines.Length > 0)
             {
                 return lines[0];
@@ -24,12 +24,12 @@ namespace DoAnTinHoc_QLBanHangCaPhe
             return "File rỗng";
         }
 
-        public static bool GhiFile(string content)
+        public static bool GhiFile(string gf)
         {
-            string summaryFilePath = "Baocao_Tuan1.txt";
+            string fileBaocao = "Baocao_Tuan1.txt";
             try
             {
-                File.WriteAllText(summaryFilePath, "\n Bao cao da duoc ghi thanh cong. Du lieu doc duoc: " + content);
+                File.WriteAllText(fileBaocao, "\n Bao cao da duoc ghi thanh cong. Du lieu doc duoc: " + gf);
                 return true;
             } catch (Exception)
             {
